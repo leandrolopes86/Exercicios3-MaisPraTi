@@ -47,7 +47,7 @@ projeto-lanchonete/
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/leandrolopes86/Exercicios3-MaisPraTi.git
 ```
 
 2. Abra o arquivo `index.html` no navegador.
@@ -58,13 +58,7 @@ Ou publique com GitHub Pages para acesso online.
 
 ## 👩‍💻 Autor
 
-Desenvolvido por **[Seu Nome Aqui]**  
+Desenvolvido por **Leandro Lopes**  
 Este projeto faz parte do aprendizado de fundamentos de desenvolvimento web.
-
----
-
-## 📷 Prévia
-
-> Insira aqui um screenshot opcional da página principal ou galeria!
 
 ---
