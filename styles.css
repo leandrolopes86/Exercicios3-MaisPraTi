@@ -1,0 +1,226 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header, Main, Footer */
+header, main, footer {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #333;
+}
+
+header {
+  background-color: #f7c59f;
+  color: #3e3e3e;
+}
+
+main {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+footer {
+  background-color: #ddd;
+  color: #000;
+  text-align: center;
+}
+
+/* h2 estilizado */
+h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+/* Classe destaque */
+.destaque {
+  font-style: italic;
+  background-color: #ffe;
+  padding: 5px;
+}
+
+/* ID importante */
+#importante {
+  border-top: 4px solid #c00;
+  padding-top: 5px;
+}
+
+/* Galeria de imagens */
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.galeria figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.galeria img {
+  width: 100%;
+  height: 180px; /* altura padronizada */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.galeria figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsividade da galeria */
+@media (max-width: 800px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Menu */
+.menu {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    padding: 10px;
+  }
+
+  .menu ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Estilo para listas (listas.html) */
+ul, ol {
+  margin: 20px;
+  padding-left: 40px;
+  font-size: 1.1rem;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Estilo para a nav com links externos */
+nav {
+  margin: 30px 20px;
+  padding: 10px;
+  background-color: #eef;
+  border-left: 5px solid #66f;
+}
+
+nav a {
+  color: #0066cc;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para páginas com formulário (feedback.html) */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Estilo para h1 nas páginas */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #333;
+}
